@@ -65,6 +65,10 @@ header {
     margin: 0 50px;
 }
 
+#header_bar nav a:hover {
+    color: var(--color_red);
+}
+
 /* Main Part ============================= */
 
 #main_part {
@@ -75,8 +79,7 @@ header {
     width: 100%;
     height: 800px;
     display: flex;
-    justify-content: center;
-    
+    justify-content: center; 
 }
 
 #main_content {
@@ -124,14 +127,14 @@ header {
 
 #what_we_do {
     width: 100%;
-    height: 700px;
+    min-height: 700px;
     display: flex;
     flex-direction: column;
     color: var(--color_black);
 }
 
 #what_we_do_container {
-    width: 637px;
+    max-width: 637px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -153,11 +156,11 @@ header {
 }
 
 #icon_container {
-    width: 1000px;
-    height: 193px;
+    width: 80%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
     margin: 0 auto;
 }
 
@@ -181,4 +184,116 @@ header {
     font-weight: 400;
     font-size: 14px;
     line-height: 26px;
+}
+
+/* Our Results ============================= */
+
+#results {
+    background-image: url(./images/headphones_hero_2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    min-height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#results_container {
+    max-width: 637px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+#results_container h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+#results_container p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+#percents_container {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.percent {
+    display: flex;
+    flex-direction: column;
+    background-image: url(./images/pentagone.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 190px;
+    height: 190px;
+    margin: 20px;
+}
+
+.percent h5 {
+    margin-top: 80px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 26px;
+}
+
+.percent p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+/* Contact Us ============================= */
+
+#contact_us {
+    width: 100%;
+    height: 500px;
+}
+
+/* Footer ============================= */
+
+footer {
+    background-color: var(--color_black);
+    width: 100%;
+    height: 250px;
+}
+
+.footer_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 100px;
+}
+
+footer .footer_logo {
+    width: 161px;
+    height: 32px;
+}
+
+footer p {
+    padding-top: 100px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+footer div a:nth-child(2) {
+    margin-left: 20px;
+    margin-right: 20px;
 }
